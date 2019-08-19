@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+*{
+    margin: 0; 
+    padding: 0;
+    font-family: 'Roboto Slab', serif; 
+}
+.barra{
+    background-color: black;
+    flex-wrap: wrap;
+    display: flex; 
+    position: sticky;
+    top: 0;
+    z-index: 1;
+} 
+body{
+    background-image: url("img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: auto;
+}
+header{
+    background-image: url("img/banner.jpeg");
+    height: 200px;
+    background-size: cover;
+}
+ul{
+    list-style: none; /* para quitar viñetas de las listas */
+}
+
+.nav > li{
+    float: left;
+}
+.nav > li > a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding:  20px;
+    display: block
+}
+.nav li a:hover{
+    background-color: gray;
+}
+.nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+.nav li:hover > ul { /* aplicacion de estilos en cascada */
+    display: block; /* li= padre ul hijo */
+}
+.nav > li > ul > li > a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 20px;
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+
+  
+}
+.section{
+    width: auto;
+    height: auto;
+   /*  border: 1px solid red; */
+    flex-wrap: nowrap;
+    display: flex;
+    
+}
+.section > div{
+    /* border: 1px solid green; */
+    background-position-y: 1;
+    margin: 15px;
+    height: auto;
+    width: 500px;
+    background-color: whitesmoke;
+}
+h1{
+    text-align: center;
+    background-color:#4a4a4a;
+    color: white;
+}
+div{ 
+    text-align: justify;
+    padding: 5px;
+
+}
+.section > .doble{
+    background: white;
+    margin: 15px;
+    height: auto;
+    width: 900px;
+    opacity: 1;
+}
+h2{
+    text-align: center;
+}
+ol{
+    padding: 30px;
+}
+.mapa{
+    float: left;
+    padding: 5px;
+}
+footer{
+    height: 150px;
+    background-color: black;
+}
+h3{
+    color: white;
+    padding: 10px;
+}
+footer{
+    padding-left: 600px;
+}
+
+
+
+
+
